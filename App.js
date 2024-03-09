@@ -1,29 +1,21 @@
-import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import React from "react";      
+import { View, Text,  } from "react-native";
 
-function App() {
+function App(){
+    return(
+        <View style={{flex:1, 
+        flexDirection:'row' , 
+        alignItems:'center', 
+        justifyContent:'center', 
 
-    // flexbox parte 02 simulando uma tela de app
+         }}>
 
-    return (
-        <SafeAreaView style={{ flex: 1, backgroundColor: '#121212' }}>
+            <View style={{height:90, width:90, backgroundColor:'#121212'}}></View>
+            <View style={{height:90, width:90, backgroundColor:'red'}}></View>
+            <View style={{height:90, width:90, backgroundColor:'green'}}></View>
 
-
-            <SafeAreaView style={{ height: 65, backgroundColor: '#121212' }}></SafeAreaView>
-
-
-
-            <SafeAreaView style={{ flex: 1, backgroundColor: '#ddd' }}>
-                <Text>Sou um texto</Text>
-            </SafeAreaView>
-
-            <SafeAreaView style={{ height: 65, backgroundColor: '#121212' }}></SafeAreaView>
-
-
-        </SafeAreaView>
+        </View>
     );
 }
 
 export default App;
-
-
