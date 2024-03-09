@@ -1,37 +1,49 @@
-import React from 'react'; // Importa a biblioteca React
+import React from 'react';
+import { View, Text,SafeAreaView  } from 'react-native';
 
-import { View, Text } from 'react-native'; // Importa os componentes View e Text do pacote react-native
-
-// Definição de um componente de função. A função está comentada aqui.
-
-//function App(){ 
-  // Retorna um componente de texto com o texto "Oi tudo bem?"
-  //return <Text>Oi tudo bem?</Text> 
-//}
-
-// Está sendo exportada uma função anônima que retorna um componente de texto. 
-//A função está comentada aqui.
-
-/* export default function(){ 
-Retorna um componente de texto com o texto "olá mundo"
-  return <Text>olá mundo</Text> 
-} */
+function App(){
+    // flex 1, todos ocupam o tamanho da tela.
+    // cada um tem flex 1 , então cada ficar com parte da tela
+    //  <SafeAreaView style={{flex:2,  backgroundColor:'yellow'}}></SafeAreaView>...
+    // também posso pegar aumentar o flex ele pegar mais um pouco da metade da tela
+    
+    return(
+        <SafeAreaView style={{flex:1,backgroundColor:'black'}}> 
 
 
+        <SafeAreaView style={{flex:1, backgroundColor:'red'}}>
+            
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        <Text>EU SOU UM TEXTO!</Text>
+        </SafeAreaView>
+        
+     
 
-/* 
-  Exporta um componente de função anônima usando uma sintaxe de arrow function.
-  Esta função retorna um componente de texto com o texto "Meu primeiro componente!!"
-*/
+        <SafeAreaView style={{flex:2,  backgroundColor:'green'}}></SafeAreaView>
 
+        <SafeAreaView style={{flex:2,  backgroundColor:'yellow'}}></SafeAreaView>
+    
+    
+        </SafeAreaView>
+    );
+}
 
-/* export default () => { 
-  return <Text>Meu primeiro componente!!</Text> 
-} */
-
-// Exporta uma função anônima usando uma sintaxe de arrow function sem a necessidade de chaves.
-
-export default () => <Text>Primeiro componente haha</Text>
-
+export default App;
 
 
