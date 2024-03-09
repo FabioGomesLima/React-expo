@@ -1,45 +1,25 @@
 import React from 'react';
-import { View, Text,SafeAreaView  } from 'react-native';
+import { View, Text, SafeAreaView } from 'react-native';
 
-function App(){
-    // flex 1, todos ocupam o tamanho da tela.
-    // cada um tem flex 1 , então cada ficar com parte da tela
-    //  <SafeAreaView style={{flex:2,  backgroundColor:'yellow'}}></SafeAreaView>...
-    // também posso pegar aumentar o flex ele pegar mais um pouco da metade da tela
-    
-    return(
-        <SafeAreaView style={{flex:1,backgroundColor:'black'}}> 
+function App() {
+
+    // flexbox parte 02 simulando uma tela de app
+
+    return (
+        <SafeAreaView style={{ flex: 1, backgroundColor: '#121212' }}>
 
 
-        <SafeAreaView style={{flex:1, backgroundColor:'red'}}>
-            
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        <Text>EU SOU UM TEXTO!</Text>
-        </SafeAreaView>
-        
-     
+            <SafeAreaView style={{ height: 65, backgroundColor: '#121212' }}></SafeAreaView>
 
-        <SafeAreaView style={{flex:2,  backgroundColor:'green'}}></SafeAreaView>
 
-        <SafeAreaView style={{flex:2,  backgroundColor:'yellow'}}></SafeAreaView>
-    
-    
+
+            <SafeAreaView style={{ flex: 1, backgroundColor: '#ddd' }}>
+                <Text>Sou um texto</Text>
+            </SafeAreaView>
+
+            <SafeAreaView style={{ height: 65, backgroundColor: '#121212' }}></SafeAreaView>
+
+
         </SafeAreaView>
     );
 }
